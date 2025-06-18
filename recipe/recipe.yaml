@@ -2,15 +2,15 @@ schema_version: 1
 
 context:
   name: azure-multiapi-storage
-  version: 1.4.0
+  version: "1.5.0"
 
 package:
   name: ${{ name|lower }}
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/azure-multiapi-storage-${{ version }}.tar.gz
-  sha256: 45f15dfb5c4bda8b9627734b5cc72c45f436d796e2e216be88239c6178cd0f71
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
+  sha256: 83fe413ac5373b3be9c4c9f248f54da1a5cbae6c236fc6aade17ad0bf8ec1166
 
 build:
   number: 0
